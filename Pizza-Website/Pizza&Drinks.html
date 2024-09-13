@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza and Drinks Page</title>
+    <link rel="stylesheet" href="Pizza.css" >
+    <link rel="stylesheet" href="Drinks.css">
+    <link rel="shortcut icon" href="Images/aboutus_content/pizza.svg">
+    
+</head>
+
+<body>
+    <div class="container">
+        <img src="Images/Header Footer Pic/Header.logo.png" alt="logo" class="logo">
+        <div class="link-container">
+            <a href="Home.html" class="webpage">Home page</a>
+            <a href="About_us.html" class="webpage">About us</a>
+            <a href="Order.html" class="webpage">Order</a>
+            <a href="Outlet.html" class="webpage">Outlet</a>
+        </div>
+        <a href="Sign_in.html" class="signin-container">
+            <div class="signin-content">
+                <img src="Images/Header Footer Pic/Header.sign_in.png" alt="Sign in">
+            </div>
+        </a>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="Promotion.html" class="other_option">Promotion</a></li>
+            <!--Tells the browser that the following code is JavaScript without returning any value-->
+            <li><a href="javascript:void(0)" onclick="showPage('pizza-page')" class="other_option">Pizza</a></li>
+            <li><a href="javascript:void(0)"  onclick="showPage('drinks-page')" class="other_option">Drinks</a></li>
+        </ul>
+    </div>
+
+    <div id="pizza-page" class="main">
+        <div>
+            <h1>SELECT YOUR PIZZA</h1>
+        </div>
+        <div id="pizzas"><h2>Pizza</h2></div>
+        <div id="pizzas-container" class="items"></div>
+    </div>
+
+    <!-- Drinks Page-->
+    <div id="drinks-page" class="main">
+        <div>
+            <h1>SELECT YOUR DRINKS</h1>
+        </div>
+        <div id="drink"><h2>Drinks</h2></div>
+        <div id="drinks-container" class="items"></div>
+    </div>
+
+    <a href="#" id="image-button">
+        <img src="Images/Header Footer Pic/phonecall.gif" alt="Call">
+    </a>
+
+    <hr style="border: 2px solid red">
+
+    <footer>
+        <div class="box">
+            <p>Any enquiry?<br>Feel free to email us</p>
+            <a href="mailto:pizza4you@gmail.com" target="_blank" title="email">
+                <button class="enquiry-button">Enquiry</button>
+            </a>
+        </div>
+
+        <div class="box">
+            <p>Follow our socials</p>
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="Images/Header Footer Pic/Footer.Instagram.png" alt="instagram" class="media-size"></a>
+            <a href="https://www.Facebook.com/" target="_blank" title="Facebook"><img src="Images/Header Footer Pic/Footer.Facebook.png" alt="facebook" class="media-size"></a>
+            <a href="https://www.twitter.com/" target="_blank" title="Twitter"><img src="Images/Header Footer Pic/Footer.Twitter.png" alt="twitter" class="media-size"></a>
+            <a href="https://www.whatsapp.com/" target="_blank" title="WhatsApp"><img src="Images/Header Footer Pic/Footer.WhatsApp.png" alt="whatsapp" class="media-size"></a>
+        </div>
+
+        <div class="box">
+            <p>We accept</p>
+            <img src="Images/Header Footer Pic/Footer.grabpay.png" alt="GrabPay" class="grab-pay">
+            <img src="Images/Header Footer Pic/Footer.touchngo.png" alt="Touch N Go eWallet" class="touchngo">
+            <img src="Images/Header Footer Pic/Footer.mastercard.png" alt="Master Card" class="mastercard">
+        </div>
+    </footer>
+    <script src="Pizza&Drinks.js"></script>
+</body>
+</html>
